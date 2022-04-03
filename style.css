@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+#header{
+    background-color: #d00000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+}
+#header-img{
+    width: 150px;
+    height: 60px;
+    padding: 5px 10px;
+}
+.nav-link{
+    color:#03071e;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 20px;
+    font-weight: 600;
+}
+.image{
+    background-image: url("https://img4.goodfon.com/wallpaper/nbig/7/6c/eda-desert-pirozhnoe-shokolad-klubnika-vkusno-krem.jpg");
+    height:690px;
+    background-size: 100% 690px;
+}
+.images{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+h1{
+    color:#370617;
+    font-size: 50px;
+    text-align: center;
+    font-weight: 700;
+    margin: 80px auto;
+}
+.images img{
+    margin: 20px;
+    width:250px;
+    height: 250px;
+    border-radius: 50%;
+}
+.images span{
+    font-size:20px;
+    color: #f48c06;
+    padding: 8px;
+    font-weight: 600;
+}
+#facilities{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    background-color: #ffba08;
+    text-align: center;
+    width: 800px;
+    padding: 30px;
+    border-radius: 8px;
+}
+.card p{
+    font-size: 20px;
+    color:#03071e;
+    padding: 20px 30px;
+    font-weight: 700;
+}
+#video{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.signin{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 80px;
+}
+.content h2{
+    font-size: 50px;
+    color: #370617;
+    font-weight: 700;
+}
+.content span{
+    color: #f48c06;
+}
+.content h3{
+    font-size: 35px;
+    color: #f48c06;
+    margin: 50px 0;
+}
+#name{
+    padding: 10px;
+    width: 400px;
+    display: block;
+    margin-bottom: 20px;
+    border:1px solid #000;
+    border-radius: 8px;
+}
+#email{
+    padding: 10px;
+    width: 400px;
+    display: block;
+    border:1px solid #000;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+#submit{
+    padding: 8px;
+    width: 400px;
+    border:none;
+    border-radius: 8px;
+    background-color: #f48c06;
+    color: #fff;
+    font-weight: 700;  
+    cursor: pointer;
+}
+.signin img{
+    width: 500px;
+}
+#footer{
+    background-color: #d00000;
+    color:#fff;
+    text-align: center;
+    padding: 10px;
+}
+#nav-bar a:hover{
+    color: #fff;
+}
+@media (max-width:1440px){
+    .images{
+        flex-wrap: wrap;
+    }
+}
+@media (max-width:900px){
+    .signin{
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    #submit{
+        width: 54%;
+        margin: 8px auto;
+    }
+    .card{
+        width: 75vw;
+    }
+    .signin img{
+        width:54%;
+    }
+
+}
+@media (max-width:800px){
+    .images div{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 364px;
+    }
+    #header{
+        flex-direction: column;
+        text-align: center;
+        position: sticky;
+    }
+    #nav-bar{
+        display: flex;
+        flex-direction: column;
+    }
+    .image{
+        height: 400px;
+    }
+    h1{
+        font-size: 40px;
+    }
+    .content h2{
+        font-size: 40px;
+    }
+    .content h3{
+        font-size: 25px;
+    }
+    #name{
+        width: 60%;
+        margin: 8px auto;
+    }
+    #email{
+        width: 60%;
+        margin: 8px auto;
+    }
+}
